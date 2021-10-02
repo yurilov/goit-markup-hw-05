@@ -149,6 +149,21 @@ ul {
   color: var(--accent-color);
 }
 
+.site-nav > .list-item {
+  position: relative;
+}
+
+.link.current::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -1px;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+}
+
 /* Футер */
 
 .page-footer {
@@ -346,6 +361,24 @@ ul {
   line-height: 1.17;
   text-align: center;
   color: var(--title-text-color);
+}
+
+.about-list > .list-item {
+  position: relative;
+}
+
+.about-label {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 27px 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8));
 }
 
 /* Наша команда */
