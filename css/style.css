@@ -646,8 +646,9 @@ ul {
   position: absolute;
   width: 100%;
   height: 100%;
-
-  padding: 63px 24px;
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
   font-size: 18px;
   line-height: 1.56;
   color: var(--primary-white-color);
